@@ -38,19 +38,19 @@ Então deve exibir uma mensagem de alerta: "Preencha os itens obrigatórios"
 ___________________________________________________________________________
 
 Contexto: 
-Dado que eu acesse a página do Portal EBAC-SHOP
+Dado que eu acesse a página do Portal EBAC-SHOP*
 
-Cenário: Cadastro com dados obrigatórios preenchidos
+Cenário: 1 - Cadastro com dados obrigatórios preenchidos
 Quando eu inserir as informações obrigatórias
 E todos os campos com "*" estiverem preenchidos
 Então deve exibir uma mensagem: "Cadastro efetuado com sucesso"
 
-Cenário: Cadastro com email incorreto
+Cenário: 2 - Cadastro com email incorreto
 Quando eu inserir um e-mail
 E o formato deste for inválido
 Então deve exibir uma mensagem de erro: "E-mail inválido"
 
-Cenário: cadastro com campo obrigatório "vazio"
+Cenário: 3 - cadastro com campo obrigatório "vazio"
 Quando algum campo obrigatório estiver vazio
 E faltar preencher com dados
 Então deve exibir uma mensagem de alerta: "Preencha os itens obrigatórios"
